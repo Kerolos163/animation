@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../constant.dart';
 import 'Core/constant.dart';
 import 'Core/finction.dart';
 import 'Widget/character_Movement.dart';

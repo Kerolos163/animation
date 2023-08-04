@@ -1,0 +1,1 @@
+int jerryAliignment = 0;

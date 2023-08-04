@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
-import 'Lecture one/Lecture_one.dart';
+import 'Implicit_Animation/Lecture Two/AnimatedContainer.dart';
+import 'Implicit_Animation/Lecture one/Lecture_one.dart';
 
 class HomeScreem extends StatelessWidget {
   const HomeScreem({super.key});
@@ -15,12 +16,21 @@ class HomeScreem extends StatelessWidget {
         child: ListView(
           children: [
             ElevatedButton(
-                onPressed: () {
-                  Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => const AnimationAlign(),
-                  ));
-                },
-                child: const Text("Animation Align"))
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const AnimationAlign(),
+                ));
+              },
+              child: const Text("Animation Align"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const AnimatedContainerScreen(),
+                ));
+              },
+              child: const Text("Animated Container"),
+            ),
           ],
         ),
       ),
