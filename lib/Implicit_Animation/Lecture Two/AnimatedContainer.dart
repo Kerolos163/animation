@@ -37,6 +37,7 @@ class _AnimatedContainerScreenState extends State<AnimatedContainerScreen> {
           _setAnimationValue();
         },
         child: AnimatedContainer(
+          curve: Curves.bounceIn,
           width: _width,
           height: _height,
           duration: const Duration(milliseconds: 400),
