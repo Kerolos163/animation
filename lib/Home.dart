@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
+import 'Implicit_Animation/Lecture Four/AnimatedOpacity.dart';
 import 'Implicit_Animation/Lecture Three/AnimatedText.dart';
 import 'Implicit_Animation/Lecture Two/AnimatedContainer.dart';
 import 'Implicit_Animation/Lecture one/Lecture_one.dart';
@@ -39,6 +40,14 @@ class HomeScreem extends StatelessWidget {
                 ));
               },
               child: const Text("Animated Text Size"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const AnimatedOpacityScreen(),
+                ));
+              },
+              child: const Text("Animated Opacity"),
             ),
           ],
         ),
