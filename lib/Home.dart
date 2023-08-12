@@ -8,6 +8,7 @@ import 'Implicit_Animation/Lecture Six/AnimatedPhysicalModel.dart';
 import 'Implicit_Animation/Lecture Three/AnimatedText.dart';
 import 'Implicit_Animation/Lecture Two/AnimatedContainer.dart';
 import 'Implicit_Animation/Lecture one/Lecture_one.dart';
+import 'Implicit_Animation/lecture seven/AnimatedPositioned.dart';
 
 class HomeScreem extends StatelessWidget {
   const HomeScreem({super.key});
@@ -66,6 +67,14 @@ class HomeScreem extends StatelessWidget {
                 ));
               },
               child: const Text("Animated Physical Model"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const AnimatedPositionedContainer(),
+                ));
+              },
+              child: const Text("Animated Position"),
             ),
           ],
         ),
