@@ -8,6 +8,7 @@ import 'Implicit_Animation/Lecture Six/AnimatedPhysicalModel.dart';
 import 'Implicit_Animation/Lecture Three/AnimatedText.dart';
 import 'Implicit_Animation/Lecture Two/AnimatedContainer.dart';
 import 'Implicit_Animation/Lecture eight/Animated_Positioned_Directional.dart';
+import 'Implicit_Animation/Lecture nine/AnimatedCrossFade.dart';
 import 'Implicit_Animation/Lecture one/Lecture_one.dart';
 import 'Implicit_Animation/lecture seven/AnimatedPositioned.dart';
 
@@ -85,6 +86,14 @@ class HomeScreem extends StatelessWidget {
                 ));
               },
               child: const Text("Animated Positioned Directional"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const AnimatedCrossFadeScreen(),
+                ));
+              },
+              child: const Text("Animated Cross Fade onal"),
             ),
           ],
         ),
