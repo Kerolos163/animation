@@ -18,7 +18,7 @@ class _AnimatedCrossFadeScreenState extends State<AnimatedCrossFadeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Animated Cross Fade onal"),
+        title: const Text("Animated Cross Fade"),
       ),
       body: Center(
         child: GestureDetector(

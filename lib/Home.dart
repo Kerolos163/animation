@@ -10,6 +10,7 @@ import 'Implicit_Animation/Lecture Two/AnimatedContainer.dart';
 import 'Implicit_Animation/Lecture eight/Animated_Positioned_Directional.dart';
 import 'Implicit_Animation/Lecture nine/AnimatedCrossFade.dart';
 import 'Implicit_Animation/Lecture one/Lecture_one.dart';
+import 'Implicit_Animation/Lecture ten/AnimatedSwitcherWidget.dart';
 import 'Implicit_Animation/lecture seven/AnimatedPositioned.dart';
 
 class HomeScreem extends StatelessWidget {
@@ -93,7 +94,15 @@ class HomeScreem extends StatelessWidget {
                   builder: (context) => const AnimatedCrossFadeScreen(),
                 ));
               },
-              child: const Text("Animated Cross Fade onal"),
+              child: const Text("Animated Cross Fade"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const AnimatedSwitcherScreen(),
+                ));
+              },
+              child: const Text("Animated Switcher"),
             ),
           ],
         ),
