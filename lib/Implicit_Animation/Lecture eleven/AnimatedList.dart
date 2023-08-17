@@ -24,7 +24,7 @@ class _AnimatedListScreenState extends State<AnimatedListScreen> {
       String removedItem = _List[index];
       _List.removeAt(index);
       _Listkey.currentState?.removeItem(index,
-          duration: const Duration(milliseconds: 800), (context, animation) {
+          duration: const Duration(milliseconds: 500), (context, animation) {
         return ListTile(
           title: Text(removedItem),
           textColor: Colors.red,
