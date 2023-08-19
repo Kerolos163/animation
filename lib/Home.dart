@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
+import 'Explicit_Animation/Lecture Three/RotationTransition.dart';
 import 'Explicit_Animation/Lecture Two/SizeTransition.dart';
 import 'Explicit_Animation/Lecture one/AnimatedPoistionedTransition.dart';
 import 'Implicit_Animation/Lecture Five/AnimatedPadding.dart';
@@ -136,6 +137,17 @@ class HomeScreem extends StatelessWidget {
                 ));
               },
               child: const Text("Animated Size Transition"),
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.red,
+              ),
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const RotationTransitionScreen(),
+                ));
+              },
+              child: const Text("Animated Rotation Transition"),
             ),
           ],
         ),
