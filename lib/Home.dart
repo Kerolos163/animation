@@ -5,6 +5,7 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'Explicit_Animation/Lecture Three/RotationTransition.dart';
 import 'Explicit_Animation/Lecture Two/SizeTransition.dart';
 import 'Explicit_Animation/Lecture one/AnimatedPoistionedTransition.dart';
+import 'Explicit_Animation/lecture Four/AnimatedBuilder.dart';
 import 'Implicit_Animation/Lecture Five/AnimatedPadding.dart';
 import 'Implicit_Animation/Lecture Four/AnimatedOpacity.dart';
 import 'Implicit_Animation/Lecture Six/AnimatedPhysicalModel.dart';
@@ -148,6 +149,17 @@ class HomeScreem extends StatelessWidget {
                 ));
               },
               child: const Text("Animated Rotation Transition"),
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.red,
+              ),
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const AnimatedBuilderScreen(),
+                ));
+              },
+              child: const Text("Animated Builder"),
             ),
           ],
         ),
