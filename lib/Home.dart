@@ -3,6 +3,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
 import 'Explicit_Animation/Lecture Five/FadeTransition.dart';
+import 'Explicit_Animation/Lecture Six/PositionedDirectionalTransition.dart';
 import 'Explicit_Animation/Lecture Three/RotationTransition.dart';
 import 'Explicit_Animation/Lecture Two/SizeTransition.dart';
 import 'Explicit_Animation/Lecture one/AnimatedPoistionedTransition.dart';
@@ -172,6 +173,17 @@ class HomeScreem extends StatelessWidget {
                 ));
               },
               child: const Text("Fade Transition"),
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.red,
+              ),
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const PositionedDirectionalTransitionScreen(),
+                ));
+              },
+              child: const Text("Positioned Directional Transition"),
             ),
           ],
         ),
