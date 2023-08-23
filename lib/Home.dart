@@ -7,6 +7,7 @@ import 'Explicit_Animation/Lecture Seven/TweenAnimationBuilder.dart';
 import 'Explicit_Animation/Lecture Six/PositionedDirectionalTransition.dart';
 import 'Explicit_Animation/Lecture Three/RotationTransition.dart';
 import 'Explicit_Animation/Lecture Two/SizeTransition.dart';
+import 'Explicit_Animation/Lecture eight/TextStyle_Transition.dart';
 import 'Explicit_Animation/Lecture one/AnimatedPoistionedTransition.dart';
 import 'Explicit_Animation/lecture Four/AnimatedBuilder.dart';
 import 'Implicit_Animation/Lecture Five/AnimatedPadding.dart';
@@ -197,6 +198,17 @@ class HomeScreem extends StatelessWidget {
                 ));
               },
               child: const Text("Tween Animation Builder"),
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.red,
+              ),
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const DefualtTextStyleTransitionScreen(),
+                ));
+              },
+              child: const Text("Default Text Style Transition"),
             ),
           ],
         ),
