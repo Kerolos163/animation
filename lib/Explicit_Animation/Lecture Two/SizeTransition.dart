@@ -1,7 +1,6 @@
 import 'package:animation/Implicit_Animation/constant.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class SizeTransitionScreen extends StatefulWidget {
   const SizeTransitionScreen({super.key});
