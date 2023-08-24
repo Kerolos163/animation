@@ -1,6 +1,6 @@
+import 'package:animation/Explicit_Animation/Lecture%20Nine/IndexScaleTransition.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 import 'Explicit_Animation/Lecture Five/FadeTransition.dart';
 import 'Explicit_Animation/Lecture Seven/TweenAnimationBuilder.dart';
@@ -209,6 +209,17 @@ class HomeScreem extends StatelessWidget {
                 ));
               },
               child: const Text("Default Text Style Transition"),
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.red,
+              ),
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const IndexScaleTransitionScreen(),
+                ));
+              },
+              child: const Text("Index Scale Transition"),
             ),
           ],
         ),
