@@ -1,4 +1,6 @@
 import 'package:animation/Explicit_Animation/Lecture%20Nine/IndexScaleTransition.dart';
+import 'package:animation/page%20Transition/Lecture%20One/PageFadeTransition.dart';
+import 'package:animation/page%20Transition/Lecture%20One/PageFade_Transition.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
@@ -205,7 +207,8 @@ class HomeScreem extends StatelessWidget {
               ),
               onPressed: () {
                 Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => const DefualtTextStyleTransitionScreen(),
+                  builder: (context) =>
+                      const DefualtTextStyleTransitionScreen(),
                 ));
               },
               child: const Text("Default Text Style Transition"),
@@ -220,6 +223,15 @@ class HomeScreem extends StatelessWidget {
                 ));
               },
               child: const Text("Index Scale Transition"),
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blueGrey,
+              ),
+              onPressed: () {
+                Navigator.of(context).push(PageFadeTransition(const PageTwo()));
+              },
+              child: const Text("Page Fade Transition"),
             ),
           ],
         ),
