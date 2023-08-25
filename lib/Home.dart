@@ -26,6 +26,7 @@ import 'Implicit_Animation/Lecture nine/AnimatedCrossFade.dart';
 import 'Implicit_Animation/Lecture one/Lecture_one.dart';
 import 'Implicit_Animation/Lecture ten/AnimatedSwitcherWidget.dart';
 import 'Implicit_Animation/lecture seven/AnimatedPositioned.dart';
+import 'page Transition/Lecture Six/PageSize_Transition.dart';
 
 class HomeScreem extends StatelessWidget {
   const HomeScreem({super.key});
@@ -263,6 +264,15 @@ class HomeScreem extends StatelessWidget {
                 Navigator.of(context).push(PageSlide(const PageTwo()));
               },
               child: const Text("Page Slide Transition"),
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blueGrey,
+              ),
+              onPressed: () {
+                Navigator.of(context).push(PagesizeTransition(const PageTwo()));
+              },
+              child: const Text("Page Size Transition"),
             ),
           ],
         ),
