@@ -1,4 +1,5 @@
 import 'package:animation/Explicit_Animation/Lecture%20Nine/IndexScaleTransition.dart';
+import 'package:animation/page%20Transition/Lecture%20Four/PageSlide_Transition.dart';
 import 'package:animation/page%20Transition/Lecture%20Three/PageRotation_Transition.dart';
 import 'package:animation/page%20Transition/Lecture%20Two/PageScale_Transition.dart';
 import 'package:animation/page%20Transition/PageTwo.dart';
@@ -253,6 +254,15 @@ class HomeScreem extends StatelessWidget {
                 Navigator.of(context).push(PageRotation(const PageTwo()));
               },
               child: const Text("Page Rotation Transition"),
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blueGrey,
+              ),
+              onPressed: () {
+                Navigator.of(context).push(PageSlide(const PageTwo()));
+              },
+              child: const Text("Page Slide Transition"),
             ),
           ],
         ),
