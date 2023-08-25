@@ -1,5 +1,5 @@
 import 'package:animation/Explicit_Animation/Lecture%20Nine/IndexScaleTransition.dart';
-import 'package:animation/page%20Transition/Lecture%20One/PageFadeTransition.dart';
+import 'package:animation/page%20Transition/Lecture%20One/PageTwo.dart';
 import 'package:animation/page%20Transition/Lecture%20One/PageFade_Transition.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
