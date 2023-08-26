@@ -1,4 +1,5 @@
 import 'package:animation/Explicit_Animation/Lecture%20Nine/IndexScaleTransition.dart';
+import 'package:animation/page%20Transition/Lecture%20Eighth/PageMixScaleRotateTransition.dart';
 import 'package:animation/page%20Transition/Lecture%20Four/PageSlide_Transition.dart';
 import 'package:animation/page%20Transition/Lecture%20Seven/MixFadeSizeTransition.dart';
 import 'package:animation/page%20Transition/Lecture%20Three/PageRotation_Transition.dart';
@@ -282,7 +283,16 @@ class HomeScreem extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context).push(PageMixFadeSizeTransition(const PageTwo()));
               },
-              child: const Text("Mix Fade Size Transition"),
+              child: const Text("Page Mix Fade Size Transition"),
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blueGrey,
+              ),
+              onPressed: () {
+                Navigator.of(context).push(PageMixScaleRotateTransition(const PageTwo()));
+              },
+              child: const Text("Page Mix Scale Rotate Transition"),
             ),
           ],
         ),
