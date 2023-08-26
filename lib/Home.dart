@@ -1,4 +1,5 @@
 import 'package:animation/Explicit_Animation/Lecture%20Nine/IndexScaleTransition.dart';
+import 'package:animation/More%20Animations/CustomPainter.dart';
 import 'package:animation/page%20Transition/Lecture%20Eighth/PageMixScaleRotateTransition.dart';
 import 'package:animation/page%20Transition/Lecture%20Four/PageSlide_Transition.dart';
 import 'package:animation/page%20Transition/Lecture%20Seven/MixFadeSizeTransition.dart';
@@ -281,7 +282,8 @@ class HomeScreem extends StatelessWidget {
                 backgroundColor: Colors.blueGrey,
               ),
               onPressed: () {
-                Navigator.of(context).push(PageMixFadeSizeTransition(const PageTwo()));
+                Navigator.of(context)
+                    .push(PageMixFadeSizeTransition(const PageTwo()));
               },
               child: const Text("Page Mix Fade Size Transition"),
             ),
@@ -290,9 +292,21 @@ class HomeScreem extends StatelessWidget {
                 backgroundColor: Colors.blueGrey,
               ),
               onPressed: () {
-                Navigator.of(context).push(PageMixScaleRotateTransition(const PageTwo()));
+                Navigator.of(context)
+                    .push(PageMixScaleRotateTransition(const PageTwo()));
               },
               child: const Text("Page Mix Scale Rotate Transition"),
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.teal,
+              ),
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const CustompainterScreen(),
+                ));
+              },
+              child: const Text("Custom painter"),
             ),
           ],
         ),
