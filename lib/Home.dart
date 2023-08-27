@@ -1,5 +1,6 @@
 import 'package:animation/Explicit_Animation/Lecture%20Nine/IndexScaleTransition.dart';
 import 'package:animation/More%20Animations/CustomPainter.dart';
+import 'package:animation/More%20Animations/LottieSlider.dart';
 import 'package:animation/page%20Transition/Lecture%20Eighth/PageMixScaleRotateTransition.dart';
 import 'package:animation/page%20Transition/Lecture%20Four/PageSlide_Transition.dart';
 import 'package:animation/page%20Transition/Lecture%20Seven/MixFadeSizeTransition.dart';
@@ -307,6 +308,17 @@ class HomeScreem extends StatelessWidget {
                 ));
               },
               child: const Text("Custom painter"),
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.teal,
+              ),
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const LottieSliderScreen(),
+                ));
+              },
+              child: const Text("Lottie Slider"),
             ),
           ],
         ),
