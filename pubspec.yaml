@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   device_preview: ^1.1.0
   lottie: ^2.6.0
+  rive: ^0.9.1
 
 dev_dependencies:
   flutter_test:
@@ -64,6 +65,7 @@ flutter:
   assets:
     - assets/
     - assets/Lottie/
+    - assets/rive/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
